@@ -6,9 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class PhoneBookCrawlerTest {
 
-//    @Rule
-//    public ExpectedException expectedException = ExpectedException.none();
-
     private PhoneBookCrawler phoneBookCrawler = new PhoneBookCrawler(new PhoneBook());
 
     @Test

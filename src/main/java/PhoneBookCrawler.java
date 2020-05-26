@@ -22,6 +22,7 @@ public class PhoneBookCrawler {
                 .filter(Optional::isPresent)
                 .map(Optional::get)
                 .findFirst().get();
+        // return phoneBook.findPhoneNumberByName(name).orElse(phoneBook.findNameByPhoneNumber(phoneNumber).)
     }
 
     public PhoneBook getPhoneBook(){

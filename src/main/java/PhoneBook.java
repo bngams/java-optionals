@@ -25,6 +25,8 @@ public class PhoneBook {
             return Optional.of(phoneBookEntries.get(name));
         }
         return Optional.empty();
+        // or
+        // return Optional.ofNullable(phoneBookEntries.get(name));
     }
 
     public Optional<String> findNameByPhoneNumber(String phoneNumber){
@@ -34,6 +36,8 @@ public class PhoneBook {
             }
         }
         return Optional.empty();
+        // or
+        // return phoneBookEntries.entrySet().stream().map(e -> e.getKey()).filter(v -> v.equals(phoneNumber)).findFirst();
     }
 
     @Override

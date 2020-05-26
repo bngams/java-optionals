@@ -36,7 +36,7 @@ public class PhoneBookTest {
     @Test
     public void findNameByPhoneNumber_NotFound() {
         Assertions.assertThrows(NoSuchElementException.class, () -> {
-            Optional<String> phoneNumber = phoneBook.findPhoneNumberByName("0241/161619");
+            Optional<String> phoneNumber = phoneBook.findNameByPhoneNumber("0241/161619");
             phoneNumber.get();
         });
     }
