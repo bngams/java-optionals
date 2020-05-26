@@ -10,18 +10,18 @@ public class PhoneBookCrawler {
     }
 
     public String findPhoneNumberByNameAndPunishIfNothingFound(String name){
-        return phoneBook.findPhoneNumberByName(name).orElseThrow(() -> new IllegalArgumentException("No phone number found"));
+        // TO COMPLETE
+        return null;
     }
 
     public String findPhoneNumberByNameAndPrintPhoneBookIfNothingFound(String name){
-        return phoneBook.findPhoneNumberByName(name).orElseGet(() -> phoneBook.toString());
+        // TO COMPLETE
+        return null;
     }
 
     public String findPhoneNumberByNameOrNameByPhoneNumber(String name, String phoneNumber){
-        return Stream.of(phoneBook.findPhoneNumberByName(name), phoneBook.findNameByPhoneNumber(phoneNumber), phoneBook.findPhoneNumberByName("Boris"))
-                .filter(Optional::isPresent)
-                .map(Optional::get)
-                .findFirst().get();
+        // TO COMPLETE
+        return null;
     }
 
     public PhoneBook getPhoneBook(){

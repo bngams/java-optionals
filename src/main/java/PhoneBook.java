@@ -21,19 +21,13 @@ public class PhoneBook {
     }
 
     public Optional<String> findPhoneNumberByName(String name){
-        if (phoneBookEntries.containsKey(name)){
-            return Optional.of(phoneBookEntries.get(name));
-        }
-        return Optional.empty();
+        // TO COMPLETE
+        return null;
     }
 
     public Optional<String> findNameByPhoneNumber(String phoneNumber){
-        for (Map.Entry<String, String> entry : phoneBookEntries.entrySet()){
-            if (entry.getValue().equals(phoneNumber)){
-                return Optional.of(entry.getKey());
-            }
-        }
-        return Optional.empty();
+        // TO COMPLETE
+        return null;
     }
 
     @Override
